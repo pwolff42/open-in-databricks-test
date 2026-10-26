@@ -1,0 +1,9 @@
+resources:
+  jobs:
+    hello_world_job:
+      name: hello_world_job
+      tasks:
+        - task_key: hello_world
+          # No cluster spec: the task runs on serverless compute
+          notebook_task:
+            notebook_path: ../src/hello_world.py
